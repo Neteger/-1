@@ -1,12 +1,12 @@
 
 -- Добавление исполнителей
-INSERT INTO Artists(id, nickname) VALUES
+INSERT INTO musician(id, nickname) VALUES
 (1, 'Artist1'),
 (2, 'Artist2'),
 (3, 'Artist3'),
 (4, 'Artist4');
 -- Добавление жанров
-INSERT INTO music_ganre(id, ganre_name) VALUES
+INSERT INTO music_ganres(id, ganre_name) VALUES
 (1, 'Pop'),
 (2, 'Rock'),
 (3, 'Hip-hop'),
