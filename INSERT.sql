@@ -1,13 +1,13 @@
 
 -- Добавление исполнителей
-INSERT INTO исполнители (id, имя) VALUES
+INSERT INTO musicians(id, nickname) VALUES
 (1, 'Исполнитель1'),
 (2, 'Исполнитель2'),
 (3, 'Исполнитель3'),
 (4, 'Исполнитель4');
 
 -- Добавление жанров
-INSERT INTO жанры (id, название) VALUES
+INSERT INTO music_ganre(id, ganre_name) VALUES
 (1, 'Поп'),
 (2, 'Рок'),
 (3, 'Хип-хоп'),
@@ -20,7 +20,7 @@ INSERT INTO альбомы (id, название, год) VALUES
 (3, 'Альбом3', 2021);
 
 -- Добавление треков
-INSERT INTO треки (id, название, продолжительность, альбом_id) VALUES
+INSERT INTO songs(song_id, song_name, duration, album_id) VALUES
 (1, 'Трек1', '3:30', 1),
 (2, 'Трек2', '4:15', 1),
 (3, 'Трек3', '2:45', 2),
@@ -29,14 +29,14 @@ INSERT INTO треки (id, название, продолжительность
 (6, 'Трек6', '5:10', 3);
 
 -- Добавление сборников
-INSERT INTO сборники (id, название, год) VALUES
+INSERT INTO collection(collection_id, collection_name, release_year) VALUES
 (1, 'Сборник1', 2018),
 (2, 'Сборник2', 2019),
 (3, 'Сборник3', 2020),
 (4, 'Сборник4', 2021);
 
 -- Связь исполнителей и жанров
-INSERT INTO исполнитель_жанр (исполнитель_id, жанр_id) VALUES
+INSERT INTO musicians_жанр (musicians_id, ganre_id) VALUES
 (1, 1), -- Исполнитель1 - Поп
 (1, 2), -- Исполнитель1 - Рок
 (2, 2), -- Исполнитель2 - Рок
@@ -45,14 +45,14 @@ INSERT INTO исполнитель_жанр (исполнитель_id, жанр
 (4, 4); -- Исполнитель4 - Электронная музыка
 
 -- Связь исполнителей и альбомов
-INSERT INTO исполнитель_альбом (исполнитель_id, альбом_id) VALUES
+INSERT INTO musicians_album (musicians_id, album_id) VALUES
 (1, 1), -- Исполнитель1 - Альбом1
 (2, 2), -- Исполнитель2 - Альбом2
 (3, 3), -- Исполнитель3 - Альбом3
 (4, 1), -- Исполнитель4 - Альбом1
 
 -- Связь сборников и треков
-INSERT INTO сборник_трек (сборник_id, трек_id) VALUES
+INSERT INTO songscollection(collection_id, song_id) VALUES
 (1, 1), -- Сборник1 - Трек1
 (1, 2), -- Сборник1 - Трек2
 (2, 3), -- Сборник2 - Трек3
