@@ -13,7 +13,7 @@ INSERT INTO music_ganres(id, ganre_name) VALUES
 (4, 'Electronic music');
 
 -- Добавление альбомов
-INSERT INTO albums (id, title, year) VALUES
+INSERT INTO albums(id, title, year) VALUES
 (1, 'Album1', 2019),
 (2, 'Album2', 2020),
 (3, 'Album3', 2021);
@@ -34,7 +34,7 @@ INSERT INTO collection(collection_id, collection_name, release_year) VALUES
 (4, 'Compilation4', 2021);
 
 -- Связь исполнителей и жанров
-INSERT INTO musicians_жанр (musicians_id, ganre_id) VALUES
+INSERT INTO musicians and genres (musicians_id, ganre_id) VALUES
 (1, 1), -- Исполнитель1 - Поп
 (1, 2), -- Исполнитель1 - Рок
 (2, 2), -- Исполнитель2 - Рок
@@ -43,7 +43,7 @@ INSERT INTO musicians_жанр (musicians_id, ganre_id) VALUES
 (4, 4); -- Исполнитель4 - Электронная музыка
 
 -- Связь исполнителей и альбомов
-INSERT INTO musicians_album (musicians_id, album_id) VALUES
+INSERT INTO musicians and album(musicians_id, album_id) VALUES
 (1, 1), -- Исполнитель1 - Альбом1
 (2, 2), -- Исполнитель2 - Альбом2
 (3, 3), -- Исполнитель3 - Альбом3
