@@ -23,4 +23,4 @@ WHERE имя NOT LIKE '% %';
 SELECT название
 FROM треки
 WHERE название LIKE '%мой%' OR название LIKE '%my%';
-``
+
